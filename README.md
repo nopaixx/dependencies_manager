@@ -20,7 +20,7 @@
 
 -Better error handling
 -I have worked with the base to install real dependencies in the library with calls to the system
--More test needed
+-More test needed, specially we need mock the system calls for example apt-cache rdepends mysql etc..
 
 
 #Acknowledgements
