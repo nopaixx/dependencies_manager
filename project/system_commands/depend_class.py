@@ -11,4 +11,5 @@ class DEPEND():
         this class know how to install dependencies
         self.actions is and array of dependencies to install
         """
+        print("debug", self.action) 
         pass

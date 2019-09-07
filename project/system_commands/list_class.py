@@ -4,10 +4,12 @@ import os
 class LIST():
 
         
-    def __init__(self, action):
-        self.action = action
+    def __init__(self):
+        """
+        List class don't need action
+        """
 
-    def run(self)
+    def run(self):
         """
             List of installed packages 
         """

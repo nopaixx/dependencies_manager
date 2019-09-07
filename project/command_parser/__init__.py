@@ -1,5 +1,5 @@
 from project.system_commands import DEPEND, INSTALL, REMOVE, LIST, END
-from constants import c_DEPEND, c_INSTALL, c_REMOVE, c_LIST, c_END
+from project.constants import c_DEPEND, c_INSTALL, c_REMOVE, c_LIST, c_END
 
 class CommandParser():
 
@@ -10,7 +10,7 @@ class CommandParser():
         at the end save in self.action and object of class ACTION (DEPEND, INSTALL...)
         """
 
-        system_action = acitons.split(' ')
+        system_action = actions.split(' ')
 
         if system_action[0] == c_DEPEND:
             self.action = DEPEND(system_action[1:])
@@ -19,7 +19,7 @@ class CommandParser():
             self.action = INSTALL(system_action[1:])
 
         elif system_action[0] == c_REMOVE:
-            self.action = REMOVE(system_Action[1:])
+            self.action = REMOVE(system_action[1:])
 
         elif system_action[0] == c_LIST:
             self.action = LIST()
@@ -29,7 +29,7 @@ class CommandParser():
             
 
 
-    def __run__(self):
+    def run(self):
         """
         ALORDAN
         Command parser save and object of type DEPEND, INSTALL, etc.

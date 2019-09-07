@@ -1,3 +1,4 @@
+import json
 from project.command_parser import CommandParser
 
 
@@ -9,17 +10,16 @@ class Manager():
     """
 
     def __init__(self, args):
-
-        self.parser_json(args)
+        self.parse_json(args)
 
     def parse_json(self, file):
         with open(file) as json_file:
-          self.file_actionsdata = json.load(json_file)
+          self.file_actions = json.load(json_file)
 
-    def run():
+    def run(self):
 
         for action in self.file_actions:
-            command = CommandParser(action)
-            commnad.run()
+            command = CommandParser(action['command'])
+            command.run()
 
         # code end
