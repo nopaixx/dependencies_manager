@@ -25,7 +25,9 @@ class DEPEND():
         self.actions is and array of dependencies to install
         """
 
-        # ?
+        # DEPEND is only a CHECK or need install also?
         self.check(self.action[0])
-        print ("{} {}".format(self.system_action_name, " ".join(self.action)))
+        ret = "{} {}".format(self.system_action_name, " ".join(self.action))
+        print(ret)
+        return ret
 

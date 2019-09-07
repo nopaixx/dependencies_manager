@@ -1,17 +1,14 @@
 
 import pytest
-from project.command_parser import CommandParser
+from project.manager import Manager
 
+input1 = 'test01.json'
+input2 = 'test02.json'
 
-input1 = {
-}
-
-input2 = {
-        }
-expected1 = ""
-expected2 = ""
+expected1 = "DEPEND TCPIP"
+expected2 = "DEPEND TCPIP"
 
 @pytest.mark.parametrize("test_input,expected", [(input1, expected1), (input2, expected2)])
 def test_expression(test_input, expected):
-    assert expected == json_to_where(test_input)
-
+    manager = Manager(test_input)
+    assert expected = manager.run()

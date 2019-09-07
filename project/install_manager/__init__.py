@@ -17,9 +17,9 @@ class Manager():
           self.file_actions = json.load(json_file)
 
     def run(self):
-
+        ret = []
         for action in self.file_actions:
             command = CommandParser(action['command'])
-            command.run()
-
+            ret.append(command.run())
+        return ret
         # code end
