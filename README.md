@@ -1,7 +1,9 @@
 
 # Prepare environment
 `virtualenv --python python3.7 venv`
+
 `source venv/bin/activate `
+
 `pip install -r minimal_requirement.txt`
 
 # edit you input_command.json file if need
@@ -10,11 +12,11 @@
 `python install.py input_command.json`
 
 
-#you can run test by running
-# and adding more files to test
+# you can run test by running
 `pytest test`
 
 
+easy you can ad more test by creating more .json test files
 
 # Improvements!!
 
