@@ -1,9 +1,9 @@
 import os
 
 
-class DEPEND()
+class DEPEND():
 
-    def __init__(self, action)
+    def __init__(self, action):
         self.action = action
 
     def run(self):

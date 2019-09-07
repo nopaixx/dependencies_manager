@@ -1,10 +1,9 @@
-
 import os
 
 
-class REMOVE()
+class REMOVE():
 
-    def __init__(self, action)
+    def __init__(self, action):
         self.action = action
 
     def run(self):

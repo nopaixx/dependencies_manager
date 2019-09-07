@@ -1,7 +1,7 @@
 import os
 
 
-class END()
+class END():
 
     def __init__(self):
         pass

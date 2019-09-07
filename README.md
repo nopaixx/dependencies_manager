@@ -2,7 +2,7 @@
 # Prepare environment
 `virtualenv --python python3.7 venv`
 `source venv/bin/activate `
-`pip install -r minimal_requirements.txt`
+`pip install -r minimal_requirement.txt`
 
 # edit you input_command.json file if need"
 

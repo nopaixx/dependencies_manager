@@ -13,13 +13,13 @@ class CommandParser():
         system_action = acitons.split(' ')
 
         if system_action[0] == c_DEPEND:
-            self.action = DEPEND(system_action[1:]
+            self.action = DEPEND(system_action[1:])
 
         elif system_action[0] == c_INSTALL:
-            self.action = INSTALL(system_action[2:]
+            self.action = INSTALL(system_action[1:])
 
         elif system_action[0] == c_REMOVE:
-            self.action = REMOVE(system_Action[3:]
+            self.action = REMOVE(system_Action[1:])
 
         elif system_action[0] == c_LIST:
             self.action = LIST()
@@ -29,6 +29,12 @@ class CommandParser():
             
 
 
-    def __run__(self)
+    def __run__(self):
+        """
+        ALORDAN
+        Command parser save and object of type DEPEND, INSTALL, etc.
+        Each class implement a method run()
+        """
+
 
         self.action.run()

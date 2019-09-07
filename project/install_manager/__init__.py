@@ -2,11 +2,11 @@ from project.command_parser import CommandParser
 
 
 class Manager():
-""" ALORDAN
+    """ ALORDAN
 
-This is main class can manage all the action
-is a minimalistic code thanks to POO
-"""
+    This is main class can manage all the action
+    is a minimalistic code thanks to POO
+    """
 
     def __init__(self, args):
 
