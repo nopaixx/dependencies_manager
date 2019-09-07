@@ -1,0 +1,5 @@
+c_DEPEND = 'DEPEND'
+c_INSTALL = 'INSTALL'
+c_REMOVE = 'REMOVE'
+c_LIST = 'LIST'
+c_END = 'END'
