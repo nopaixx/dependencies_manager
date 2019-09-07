@@ -7,7 +7,7 @@
 `pip install -r minimal_requirement.txt`
 
 # run install manager with you input file
-`python installer.py input_command.json`
+`python installer.py input_commands.json`
 
 -edit you input_command.json file if need
 
