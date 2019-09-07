@@ -15,7 +15,7 @@ class INSTALL():
         and install if need
         apt-cache rdepends mysql-client
         """
-        result = subprocess.run(['apt-cache', 'rdepends', 'mysql-client'], stdout=subprocess.PIPE)
+        result = subprocess.run(['apt-cache', 'rdepends', package], stdout=subprocess.PIPE)
         # TODO parser apt-cache to well formated python
         return ['TCPIP']
 
