@@ -6,11 +6,10 @@
 
 `pip install -r minimal_requirement.txt`
 
-# edit you input_command.json file if need
-
 # run install manager with you input file
 `python install.py input_command.json`
 
+-edit you input_command.json file if need
 
 # you can run test by running
 `pytest test`
